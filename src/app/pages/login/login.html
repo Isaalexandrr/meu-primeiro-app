@@ -7,6 +7,22 @@
     senha="Senha"
 >
     <form [formGroup]="loginForm">
-        
+        <app-primay-input 
+        formControlName="email"
+        inputName="email"
+        type="email"
+        label="Email"
+        placeholder="Jonh@gmail.com"
+        >
+            <img src="email.svg" >
+        </app-primay-input>
+        <app-primay-input 
+            formControlName="password"
+            inputName="password"
+            type="password"
+            label="Your Password"
+        >
+            <img src="password.svg" >
+        </app-primay-input>
     </form>
 </app-default-login-layout>
